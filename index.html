@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios Viejuners</title>
+  </head>
+  <body>
+    <h1>FORMULARIO PARA VIEJUNERS</h1>
+    <form method="post" action>
+      <label for="nombre">Nombre:</label>
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Tu Nombre"
+        maxlength="12"
+        autofocus
+      /><br />
+      <label for="apellido">Apellidos:</label>
+      <input
+        type="text"
+        name="Apellidos"
+        placeholder="Tus Apellidos"
+        maxlength="30"
+      /><br />
+      <label for="edad">Edad:</label>
+      <input type="number" name="edad" /><br />
+      <label for="sexo">Sexo:</label>
+      <input type="radio" name="sexo" value="Hombre" />
+      <label for="Hombre">Hombre</label>
+      <input type="radio" name="sexo" value="Mujer" />
+      <label for="Mujer">Mujer</label>
+      <input type="radio" name="sexo" value="NoBinario" />
+      <label for="NoBinario">No Binario</label><br />
+      <label for="casillaViejuner">Me siento Viejuner</label>
+      <input type="checkbox" name="casillaViejuner" value="" /><br />
+      <label for="sobreMi">Algo Sobre Mi:</label><br />
+      <textarea name="SobreMi" rows="5" cols="30"></textarea><br />
+
+      <p>Tus Circunstancias</p>
+      <label for="email">Correo Electronico:</label>
+      <input type="email" name="email" placeholder="Tu Email" /><br />
+      <label for="telefono">Tel. Contacto</label>
+      <input
+        type="tel"
+        name="telefono"
+        patern="[0-9]{3}-[0-9]{3}-[0-9]{3} "
+        placeholder="000-000-000"
+      />
+      <br />
+      <br />
+      <input type="reset" value="RESET" />
+      <input type="submit" value="ENVIAR" />
+    </form>
+    <br />
+    <h2>Los Ladronzuelos de Bicis</h2>
+    <br />
+    <form>
+      <label for="dia">Dia del Robo</label>
+      <input type="date" name="dia" /><br /><br />
+      <label for="hora">Hora del Robo</label>
+      <input type="time" name="hora" /><br /><br />
+      <label for="bicicolor">Color Bici</label>
+      <input type="color" name="bicicolor" /><br /><br />
+      <label for="tipoBici">Tipo de Bicicleta:</label>
+      <select>
+        <optgroup label="Paseo">
+          <option>Senyorial</option>
+          <option>Anti-Plebs</option>
+          <option>PorEncima</option>
+        </optgroup>
+        <optgroup label="montanya">
+          <option>Gamusinos</option>
+          <option>Hueleflores</option>
+          <option>Fango Lover</option>
+        </optgroup>
+        <optgroup label="Carreras">
+          <option>Metroymedio</option>
+          <option>3 de la tarde, fluor edition</option>
+          <option>Grupies</option>
+        </optgroup>
+      </select>
+      <br /><br />
+      <label for="Accesorios">Accesorios:</label><br />
+      <select name="services[]" class="required" multiple="multiple">
+        <option value="cestita">cestita</option>
+        <option value="ruedines">ruedines</option>
+        <option value="pegatinas">pegatinas</option>
+        <option value="Bomba de aire">Bomba de aire</option>
+        <option value="Timbre">Timbre</option>
+        <option value="Foco">Foco</option></select
+      ><br /><br />
+      <label for="marca">Marca:</label>
+      <input list="marca" name="marca" />
+      <datalist id="marca">
+        <option value="Specialiced"></option>
+        <option value="Trek"></option>
+        <option value="Merida"></option>
+        <option value="BH"></option>
+        <option value="Giant"></option></datalist
+      ><br /><br />
+      <input type="reset" value="RESET" />
+      <input type="submit" value="ENVIAR" />
+    </form>
+    <br />
+
+    <br />
+  </body>
+</html>
